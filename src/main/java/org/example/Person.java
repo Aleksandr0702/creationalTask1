@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.OptionalInt;
+
 public class Person {
     protected final String name;
     protected final String surname;
@@ -33,9 +35,7 @@ public class Person {
         return surname;
     }
 
-    public int getAge() {
-        return age;
-    }
+    public OptionalInt getAge() { return OptionalInt.of(age); }
 
     public String getAddress() {
         return address;
