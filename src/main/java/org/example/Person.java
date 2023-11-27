@@ -35,7 +35,11 @@ public class Person {
         return surname;
     }
 
-    public OptionalInt getAge() { return OptionalInt.of(age); }
+    public OptionalInt getAge() {
+
+
+        return hasAge() ? OptionalInt.of(age) : OptionalInt.empty();
+    }
 
     public String getAddress() {
         return address;
